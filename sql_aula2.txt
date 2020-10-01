@@ -1,0 +1,79 @@
+#create database DBTabajara; #Criar um banco de dados
+
+#use database DBTabajara; #define o banco de dados que será utilizado
+
+#drop table TbCliente; #Excluir tabela
+
+create table TbCliente #criar uma tabela
+(
+  id int(4) primary key AUTO_INCREMENT, #primary key define a chave primária
+  nome varchar(50),             #auto_incrment adiciona 1 no campo anterior
+  email varchar(50),
+  cidade varchar(20)
+);
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Felipe', 'felipe@uni9.edu.br', 'São Paulo');
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Pedro', 'felipe@uni9.edu.br', 'São Paulo');
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Debora', 'de@uni9.edu.br', 'Cuiabá');
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Erica', 'felipe@uni9.edu.br', 'São Paulo');
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Rebeca', 'felipe@uni9.edu.br', 'São Paulo');
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Guilherme', 'de@uni9.edu.br', 'Cuiabá');
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Bruna', 'felipe@uni9.edu.br', 'São Paulo');
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Rebeca', 'felipe@uni9.edu.br', 'São Paulo');
+
+INSERT INTO TbCliente #inserir dados na tabela
+(nome, email, cidade) VALUES 
+('Davi', 'de@uni9.edu.br', 'Cuiabá');
+
+#DELETE FROM tbCliente WHERE id=1 or id=3; #DELETAR REGISTROS DA TABELA
+
+#RENAME TABLE TBCLIENTE TO MEUS_CLIENTES; #RENOMEAR A TABELA
+
+#ALTER TABLE TBCLIENTE ADD ESTADO CHAR(2) NOT NULL AFTER EMAIL; #ADD - ADICIONA COLUNAS NA TABELA 
+
+#ALTER TABLE TBCLIENTE CHANGE EMAIL MAIL VARCHAR(30); # CHANGE - ALTERA COLUNAS JA EXISTENTES
+
+#UPDATE tbcliente set mail="teste@teste.com", cidade="Santo André", ESTADO="SP" WHERE id=2 ; #ALTERO REGISTROS DA TABELA
+
+#ALTER TABLE TBCLIENTE DROP ID; #EXCLUI COLUNA NA TABELA
+
+#SELECT * FROM TBCLIENTE;
+#selecione todas as colunas da tabela cliente
+
+#SELECT id, nome FROM TBCLIENTE;
+#selecione as colunas id e nome da tabela cliente;
+
+#SELECT * FROM TBCLIENTE WHERE CIDADE = "São Paulo" ;
+#seleciona todas as colunas da tabela cliente que tem na coluna cidade "São Paulo"
+
+#SELECT * FROM TBCLIENTE ORDER BY EMAIL;
+#SELECIONA TODOS OS REGISTROS DA TABELA E COLOCA EM ORDEM DE ACORDO COM A COLUNA ESCOLHIDA
+
+#SELECT * FROM TBCLIENTE WHERE NOME LIKE "r%a";
+#seleciona os registros da tabela de acordo com as letras desejadas
+
+#SELECT * FROM TBCLIENTE WHERE id BETWEEN 2 AND 6;
+#SELECIONA OS REGISTROS DA TABELA ENTRE DOIS VALORES
